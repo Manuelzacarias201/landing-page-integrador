@@ -1,0 +1,301 @@
+:root {
+    --primary: #3a86ff;
+    --secondary: #f1f6fb;
+    --accent: #00b4d8;
+    --dark: #22223b;
+    --text: #22223b;
+    --white: #fff;
+    --shadow: 0 4px 24px rgba(58,134,255,0.08);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+  }
+  
+  header {
+    background: var(--white);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: var(--primary);
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary);
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  
+  .hero-content {
+    flex: 1 1 350px;
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .hero-content button:hover {
+    background: var(--accent);
+  }
+  
+  .hero-img {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .hero-img img {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem 2rem;
+    text-align: center;
+  }
+  
+  .hero-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+  }
+  
+  .funciona {
+    background: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .funciona h2 {
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  .funciona-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .step {
+    background: var(--secondary);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem 1rem;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step img {
+    width: 48px;
+    margin-bottom: 1rem;
+  }
+  
+  .step p {
+    font-size: 1rem;
+  }
+  
+  .ventajas {
+    background: var(--secondary);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .ventajas h2 {
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  .ventajas-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .ventaja {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem 1rem;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ventaja img {
+    width: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .ventaja h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .casos {
+    background: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .casos h2 {
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  .casos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .caso {
+    background: var(--secondary);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem 1rem;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .caso img {
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .caso h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .footer-content h5 {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+  
+  .footer-content .social a {
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #bfc0c0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-img {
+      margin-top: 1rem;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .funciona-steps, .ventajas-list, .casos-list {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .ventajas h2, .funciona h2, .casos h2 {
+      font-size: 1.3rem;
+    }
+  }
